@@ -16,10 +16,13 @@
   - to print tables of other primes, edit the `SOURCE_FILE` constant found in `index.rb`
 
 
-## Considerations
+## Discussion
 
-  - to print the default table of the first 10 primes, run `ruby index.rb`
-  - to print tables of other primes, edit the `SOURCE_FILE` constant found in `index.rb`
+  -
+  -
+  -
+  -
+  -
 
 
 ## Prompt
