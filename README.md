@@ -2,8 +2,10 @@
 
 **system dependencies:**
  - Ruby 2.5.3
+
 **setup:**
  - `bundle install` (if you do not have bundler: `gem install bundler`)
+
 **running the test suite:**
  - `rspec`
 
