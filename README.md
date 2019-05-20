@@ -18,11 +18,14 @@
 
 ## Discussion
 
-  -
-  -
-  -
-  -
-  -
+This application separates the code into three distinct concerns designed for extensibility:
+  - the `Reader` class, which is responsible for consuming and serializing input
+  - the `Table` class, which is responsible the business logic/calculations
+  - the `Writer` class, which is responsible the outputting a representation of the table
+
+The performance bottlenecks in the application are in the I/O operations, as well as the population of the table (matrix) itself. After poking around and benchmarking several options, one of the simplest solutions was demonstrating promising performance over alternatives and has been implemented in the `Table.multiply` method. Surprisingly, the stdlib `Matrix` class was performing poorly compared to the solution implemented.
+
+Understanding this, there remain a lot of opportunities to speed up the performance of the application!
 
 
 ## Prompt

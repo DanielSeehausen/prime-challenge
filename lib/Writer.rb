@@ -8,7 +8,7 @@ class Writer
       padding = " " * (cell_buffer - val.digits.count)
       print padding, val
     end
-    puts "\n"
+    puts ""
   end
 
   def self.write_to_stdout(matrix)

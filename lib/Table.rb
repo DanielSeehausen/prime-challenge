@@ -15,7 +15,7 @@ class Table
   end
 
   def matrix
-    @matrix || STDERR.puts("#{self.inspect}: has not been calculated succesfully")
+    @matrix || $stderr.puts("#{self.inspect}: has not been calculated succesfully")
   end
 
   def multiply

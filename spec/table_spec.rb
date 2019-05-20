@@ -12,7 +12,7 @@ describe Table do
     end
 
     it 'instantiates with a nil read only matrix attribute' do
-      expect(table.matrix).to be_nil
+      expect { expect(table.matrix).to be_nil }.to output.to_stderr
       expect{ table.matrix = [] }.to raise_error(NoMethodError)
     end
 
