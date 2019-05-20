@@ -23,9 +23,11 @@ This application separates the code into three distinct concerns designed for ex
   - the `Table` class, which is responsible the business logic/calculations
   - the `Writer` class, which is responsible the outputting a representation of the table
 
-The performance bottlenecks in the application are in the I/O operations, as well as the population of the table (matrix) itself. After poking around and benchmarking several options, one of the simplest solutions was demonstrating promising performance over alternatives and has been implemented in the `Table.multiply` method. Surprisingly, the stdlib `Matrix` class was performing poorly compared to the solution implemented.
+The performance bottlenecks in the application are almost entirely from the population of the table (matrix). Both reading primes from a file, as well as generating them, causes little slowdown in comparison. In the limited benchmarking provided here, reading primes from a file proved quicker than generating them with a standard Sieve of Eratosthenes size of primes grew.
 
-Understanding this, there remain a lot of opportunities to speed up the performance of the application!
+After poking around and benchmarking several options, one of the simplest solutions was demonstrating promising performance over alternatives and has been implemented in the `Table.multiply` method. Surprisingly, the stdlib `Matrix` class was performing poorly compared to the solution implemented.
+
+Understanding this, there remain a lot of opportunities to speed up the performance of the application! To get started, please see the `benchmark` file.
 
 
 ## Prompt
